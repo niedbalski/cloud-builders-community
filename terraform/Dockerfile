@@ -11,7 +11,7 @@ RUN apt-get update && \
     sha256sum -c terraform_SHA256SUMS --status && \
     unzip terraform_linux_amd64.zip -d /builder/terraform && \
     rm -f terraform_linux_amd64.zip && \
-    apt-get remove --purge -y curl unzip && \
+    apt-get remove --purge -y unzip && \
     apt-get --purge -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
