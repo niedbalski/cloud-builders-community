@@ -1,7 +1,7 @@
 FROM gcr.io/cloud-builders/gcloud
 
-ENV TERRAFORM_VERSION=0.11.13
-ENV TERRAFORM_VERSION_SHA256SUM=5925cd4d81e7d8f42a0054df2aafd66e2ab7408dbed2bd748f0022cfe592f8d2
+ENV TERRAFORM_VERSION=0.11.14
+ENV TERRAFORM_VERSION_SHA256SUM=9b9a4492738c69077b079e595f5b2a9ef1bc4e8fb5596610f69a6f322a8af8dd
 
 RUN apt-get update && \
     apt-get -y install jq curl unzip ca-certificates && \
